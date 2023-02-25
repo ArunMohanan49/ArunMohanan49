@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/assets/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="/style.css">
+    <title>Weather App</title>
+</head>
+
+<body>
+    <div class='rectangle'>
+        <div class="input-box">
+            <img src="/assets/map.png" alt="">
+            <input id="search" type="text" placeholder='enter your loaction..'>
+            <img class="search" src="./assets/search.png" alt="">
+        </div>
+
+        <div class="not-found-box">
+            <img src="/assets/404-error.png" alt="">
+            <p>Invalid Location</p>
+        </div>
+
+        <div class="weather-box">
+            <div class="weather-details">
+                <div class="tempreture">
+                    <span></span>
+                    <h1>c</h1>
+                </div>
+                <div class="description">
+                    <p></p>
+                </div>
+            </div>
+            <div class="weather-img">
+                <img src="" alt="">
+            </div>
+        </div>
+
+        <div class="climate-box">
+            <div class="climate-details">
+                <div class="climate-img">
+                    <img src="/assets/humidity.png" alt="">
+                </div>
+                <div class="climate-desc">
+                    <span class="humidity"></span>
+                    <p>humidity</p>
+                </div>
+            </div>
+
+            <div class="climate-details">
+                <div class="climate-img">
+                    <img src="/assets/wind.png" alt="">
+                </div>
+                <div class="climate-desc">
+                    <span class="wind"></span>
+                    <p>wind</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="/main.js"></script>
+</body>
+
+</html>

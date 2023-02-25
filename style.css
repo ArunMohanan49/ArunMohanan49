@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: none;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('https://wallpaper.dog/large/443.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.rectangle {
+    position: absolute;
+    width: 292px;
+    height: 146px;
+    background: linear-gradient(180deg, rgb(182 104 128) 0%, rgb(85 71 116) 100%);
+    border-radius: 16px;
+    transition: 0.6s ease-out;
+}
+
+
+
+.input-box {
+    position: absolute;
+    width: 250px;
+    height: 50px;
+    translate: -50% -50%;
+    top: 70px;
+    left: 50%;
+    background: rgba(255, 255, 255, 0.64);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 17px 10px;
+
+}
+
+.input-box input {
+    border: none;
+    background-color: transparent;
+    width: 70%;
+    padding-left: 6px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 30px;
+    color: #4E4E4E;
+    text-transform: capitalize;
+}
+
+.input-box input:focus {
+    outline: none;
+    color: #4E4E4E;
+}
+
+.search {
+    cursor: pointer;
+}
+
+.search:hover {
+    /* width: 13%; */
+    rotate: 45deg;
+    transition: 0.2s ease-in-out;
+}
+
+img {
+    width: 12%;
+}
+
+.not-found-box {
+    display: none;
+    position: absolute;
+    translate: -50% -50%;
+    top: 50%;
+    left: 50%;
+    flex-direction: column;
+    align-items: center;
+    scale: 0;
+    opacity: 0;
+}
+
+.not-found-box img {
+    width: 70%;
+    margin: 46px 0px 26px 0px;
+}
+
+.not-found-box p {
+    text-align: center;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 10px;
+    color: #3D3D3D;
+    background-color: #f0f8ff77;
+    padding: 8px;
+    border-radius: 8px;
+}
+
+.weather-box {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-evenly;
+    margin-top: 130px;
+    scale: 0;
+    opacity: 0;
+}
+
+.weather-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.weather-img img {
+    width: 100px;
+}
+
+.tempreture span {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 55px;
+    color: rgba(255, 255, 255, 0.80);
+}
+
+.description p {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.80);
+    text-transform: capitalize;
+}
+
+.climate-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 40px;
+}
+
+.climate-details {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.climate-img img {
+    width: 40px;
+}
+
+.climate-desc {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    padding: 8px;
+    color: rgba(255, 255, 255, 0.80);
+}
+
+.climate-box {
+    scale: 0;
+    opacity: 0;
+}
+
+.fadeIn {
+    animation: 0.5s fadeIn forwards;
+    animation-delay: 0.5s;
+}
+
+@keyframes fadeIn {
+    to {
+        scale: 1;
+        opacity: 1;
+    }
+}
