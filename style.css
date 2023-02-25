@@ -126,6 +126,14 @@ img {
     width: 100px;
 }
 
+.tempreture {
+    display: flex;
+}
+
+.tempreture h4{
+    color: aliceblue;
+}
+
 .tempreture span {
     font-family: 'Poppins';
     font-style: normal;
