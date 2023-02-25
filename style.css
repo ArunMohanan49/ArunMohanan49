@@ -70,7 +70,7 @@ body {
 }
 
 .search:hover {
-    /* width: 13%; */
+    /* width: 5%; */
     rotate: 45deg;
     transition: 0.2s ease-in-out;
 }
@@ -132,7 +132,10 @@ img {
 }
 
 .tempreture h4{
-    color: aliceblue;
+    color: rgba(240, 248, 255, 0.603);
+    padding-left: 1px;
+    font-size: small;
+    font-weight: 100;
 }
 
 .tempreture span {
@@ -156,7 +159,7 @@ img {
 .climate-box {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-evenly;
     margin-top: 40px;
 }
 
