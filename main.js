@@ -20,6 +20,7 @@ btn.addEventListener("click", () => {
         error404.classList.add("fadeIn");
         return;
     }
+    search.value = '';
 
     fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${APIKey}`)
         .then(data => data.json())
