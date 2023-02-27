@@ -32,7 +32,7 @@ btn.addEventListener("click", () => {
                 error404.classList.add("fadeIn");
                 return;
             }
-            // search.value = '';
+            search.value = '';
             error404.style.display = 'none';
 
             climateBox.style.display = 'flex';
@@ -78,6 +78,7 @@ btn.addEventListener("click", () => {
             climateDetails.style.display = '';
             climateBox.classList.add('fadeIn');
             climateDetails.classList.add('fadeIn');
+            weatherBox.style.display = 'flex';
 
 
             weatherBox.classList.add("fadeIn")
